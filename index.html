@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Intelligence Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
+                    <img src="assets/images/logo.png" alt="MILab Logo">
+                    <div class="logo-text">
+                        <h1>MILab</h1>
+                        <p>Machine Intelligence Lab</p>
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="member.html">Members</a></li>
+                    <li><a href="publication.html">Publications</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2>Machine Intelligence Laboratory</h2>
+            <p class="university-name">in Kunsan National University</p>
+            <p class="hero-description">Discovering the structure of knowledge from disordered data, and leading the
+                frontiers of artificial intelligence through innovative research and collaboration.</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">About Us</a>
+                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PI Message Section -->
+    <section class="pi-section">
+        <div class="container pi-container">
+            <div class="pi-image">
+                <img src="assets/images/profile.jpg" alt="Prof. Jeong-Hun Kim">
+            </div>
+            <div class="pi-content">
+                <div class="section-badge">Greetings</div>
+                <h3>Welcome to the Machine Intelligence Lab</h3>
+                <p class="pi-name">Prof. Jeong-Hun Kim, Advisor</p>
+                <div class="pi-text">
+                    <p class="intro-text">At MILab, we value <strong>Freedom, Exploration, Sharing, and Growth</strong>
+                        above all else.</p>
+
+                    <p>We delve into the fundamental questions of data: discovering hidden patterns within disorder,
+                        understanding why they emerge, and using that understanding to create something entirely new.
+                        Our vision is to <strong>implement machine intelligence to develop technologies that truly
+                            benefit the world.</strong></p>
+
+                    <p>Specifically, we leverage <strong>Machine Learning, Computer Vision, and Natural Language
+                            Processing</strong> to uncover hidden structures across diverse AI convergence
+                        fields, striving to <strong>overcome the limitations of current artificial intelligence
+                            technologies.</strong></p>
+
+                    <p>This ambitious journey requires colleagues who <strong>discuss freely, explore relentlessly,
+                            share knowledge openly, and grow together.</strong> MILab is a space designed for such
+                        passionate researchers. We invite you to join us in this exciting journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Grid -->
+    <section class="explore-section" id="about">
+        <div class="container">
+            <div class="section-header center">
+                <h3>About Us</h3>
+                <p>Learn more about our core activities and members</p>
+            </div>
+            <div class="explore-grid">
+                <div class="explore-card" onclick="location.href='research.html'" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-brain"></i></div>
+                    <h4>Research</h4>
+                    <p>Explore our cutting-edge research in AI, ML, NLP, and Computer Vision</p>
+                    <a href="research.html" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="explore-card" onclick="location.href='member.html'" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-users"></i></div>
+                    <h4>Our Members</h4>
+                    <p>Meet our diverse group of researchers and academics</p>
+                    <a href="member.html" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="explore-card" onclick="location.href='publication.html'" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-file-alt"></i></div>
+                    <h4>Publications</h4>
+                    <p>Read our latest papers and contributions to the field</p>
+                    <a href="publication.html" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="explore-card" onclick="location.href='news.html'" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-newspaper"></i></div>
+                    <h4>News & Events</h4>
+                    <p>Stay updated with our achievements and announcements</p>
+                    <a href="news.html" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="explore-footer">
+                <p>Interested in joining our team?</p>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaborators -->
+    <section class="collaborators-section">
+        <div class="container">
+            <h3>Our Collaborators</h3>
+            <div class="logos-grid">
+                <img src="assets/images/chungbuk.png" alt="Chungbuk National University" class="collab-logo">
+                <img src="assets/images/ETRI.png" alt="ETRI" class="collab-logo">
+                <img src="assets/images/Heriot-Watt.png" alt="Heriot-Watt University" class="collab-logo">
+                <img src="assets/images/manitoba.png" alt="University of Manitoba" class="collab-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo-box">
+                    <img src="assets/images/logo_icon.png" alt="MILab Logo" class="footer-logo-img">
+                </div>
+                <div>
+                    <h4>MILab</h4>
+                    <p>Machine Intelligence Laboratory</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publication.html">Publications</a></li>
+                    <li><a href="member.html">Members</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h5>Contact Us</h5>
+                <p><i class="fas fa-phone"></i> +82-63-469-4552</p>
+                <p><i class="fas fa-envelope"></i> kimjh@kunsan.ac.kr</p>
+                <p class="address-paragraph"><i class="fas fa-map-marker-alt"></i> <span>Digital Information Buliding,
+                        Room 304<br>558 Daehak-ro, Gunsan-si, Jeonbuk-do 54150, Republic of Korea</span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 MILab. All rights reserved.</p>
+                <p>Kunsan National University</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

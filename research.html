@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Machine Intelligence Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
+                    <img src="assets/images/logo.png" alt="MILab Logo">
+                    <div class="logo-text">
+                        <h1>MILab</h1>
+                        <p>Machine Intelligence Lab</p>
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html" class="active">Research</a></li>
+                    <li><a href="member.html">Members</a></li>
+                    <li><a href="publication.html">Publications</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Research Fields Section -->
+    <section class="research-page-section">
+        <div class="container">
+            <div class="section-header center">
+                <h1>Research Field</h1>
+                <p>We explore the fundamental principles of data to discover hidden patterns and implement machine
+                    intelligence that benefits the world.</p>
+            </div>
+
+            <div class="research-grid">
+                <!-- Row 1, Col 1 -->
+                <div class="research-card">
+                    <div class="research-icon-img">
+                        <img src="assets/images/Video_understanding.png" alt="Video Understanding">
+                    </div>
+                    <h3>Video Understanding</h3>
+                    <p>Developing advanced algorithms to analyze and interpret temporal dynamics in video data for
+                        action recognition and event detection.</p>
+                </div>
+
+                <!-- Row 1, Col 2 -->
+                <div class="research-card">
+                    <div class="research-icon-img">
+                        <img src="assets/images/Representation learning.png" alt="Representation Learning">
+                    </div>
+                    <h3>Representation Learning</h3>
+                    <p>Investigating methods to learn meaningful and robust representations of data that capture
+                        underlying explanatory factors.</p>
+                </div>
+
+                <!-- Row 2, Col 1 -->
+                <div class="research-card">
+                    <div class="research-icon-img">
+                        <img src="assets/images/Multi_modal_learning.png" alt="Multimodal Learning">
+                    </div>
+                    <h3>Multimodal Learning</h3>
+                    <p>Building systems that can process and relate information from multiple modalities such as text,
+                        images, and audio jointly.</p>
+                </div>
+
+                <!-- Row 2, Col 2 -->
+                <div class="research-card">
+                    <div class="research-icon-img">
+                        <img src="assets/images/World_model_prediction.png" alt="World Model for Physical AI">
+                    </div>
+                    <h3>World Model for Physical AI</h3>
+                    <p>Creating predictive world models that enable physical AI agents to reason about their environment
+                        and plan complex actions.</p>
+                </div>
+
+                <!-- Row 3, Full Width -->
+                <div class="research-card full-width-card">
+                    <div class="icon-box-large"><i class="fas fa-question-circle"></i></div>
+                    <div class="full-width-content">
+                        <h3>Propose your own research</h3>
+                        <p>We value creativity and novel ideas. if you have a unique perspective or a groundbreaking
+                            research proposal, we are open to exploration. Join us to turn your innovative concepts into
+                            reality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="section-header center">
+                <h1>Research Projects</h1>
+                <p>Explore our diverse research grants and funded projects that drive our innovation.</p>
+            </div>
+
+            <div class="projects-list">
+                <!-- Ongoing Projects -->
+                <div class="project-card ongoing">
+                    <div class="project-header">
+                        <span class="project-badge ongoing-badge">Ongoing</span>
+                        <span class="project-date">2022.04.01 - 2026.12.31</span>
+                    </div>
+                    <h3 class="project-title-kr">공간 지식추론 엔진 기술개발 사업 (참여)</h3>
+                    <p class="project-title-en">Spatial Knowledge Inference Engine Development (Participated)</p>
+                    <p class="project-fund">Funded by: Ministry of Land, Infrastructure and Transport | PI: Prof. Kwang
+                        Woo Nam</p>
+                </div>
+
+                <div class="project-card ongoing">
+                    <div class="project-header">
+                        <span class="project-badge ongoing-badge">Ongoing</span>
+                        <span class="project-date">2025.12.01 - 2028.11.30</span>
+                    </div>
+                    <h3 class="project-title-kr">복합 상황 인지 기반 도로 안전 기술 및 서비스 개발 (참여)</h3>
+                    <p class="project-title-en">Development of Road Safety Technology and Service Based on Complex
+                        Context Awareness (Participated)</p>
+                    <p class="project-fund">Funded by: Ministry of Trade, Industry and Energy | PI: Prof. Kwang Woo Nam
+                    </p>
+                </div>
+            </div>
+
+            <!-- Toggle Button -->
+            <div class="projects-toggle-container">
+                <button id="toggle-completed-btn" class="btn toggle-btn">
+                    <i class="fas fa-chevron-down"></i> Show Completed Projects (2 projects)
+                </button>
+            </div>
+
+            <!-- Completed Projects (Hidden by default) -->
+            <div id="completed-projects-list" class="projects-list hidden">
+                <div class="project-card completed">
+                    <div class="project-header">
+                        <span class="project-badge completed-badge">Completed</span>
+                        <span class="project-date">2022.07.01 - 2025.06.30</span>
+                    </div>
+                    <h3 class="project-title-kr">스마트 제조를 위한 AI 기반 인간중심 로봇 상호 작용 기술 개발 (참여)</h3>
+                    <p class="project-title-en">AI Powered Human-Centered Robot Interactions for Smart Manufacturing
+                        (AI-PRISM) (Participated)</p>
+                    <p class="project-fund">Funded by: Institute for Information & communications Technology Planning &
+                        Evaluation | PI: Seungjun Lee, Ph.D.</p>
+                    <div class="project-image">
+                        <img src="assets/images/AI-PRISM.png" alt="AI-PRISM">
+                    </div>
+                </div>
+
+                <div class="project-card completed">
+                    <div class="project-header">
+                        <span class="project-badge completed-badge">Completed</span>
+                        <span class="project-date">2023.06.01 - 2025.05.31</span>
+                    </div>
+                    <h3 class="project-title-kr">지속 가능한 비감독적 비디오 이해를 위한 클러스터링 기반의 선택적 망각 신경망 연구</h3>
+                    <p class="project-title-en">Clustering-based Selective Forgetting Network for Lifelong Unsupervised
+                        Video Understanding</p>
+                    <p class="project-fund">Funded by: National Research Foundation of Korea | PI: Prof. Jeong-Hun Kim
+                    </p>
+                    <div class="project-image">
+                        <img src="assets/images/Lifelong_learning.png" alt="Lifelong Learning">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo-box">
+                    <img src="assets/images/logo_icon.png" alt="MILab Logo" class="footer-logo-img">
+                </div>
+                <div>
+                    <h4>MILab</h4>
+                    <p>Machine Intelligence Laboratory</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publication.html">Publications</a></li>
+                    <li><a href="member.html">Members</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h5>Contact Us</h5>
+                <p><i class="fas fa-phone"></i> +82-63-469-4552</p>
+                <p><i class="fas fa-envelope"></i> kimjh@kunsan.ac.kr</p>
+                <p class="address-paragraph"><i class="fas fa-map-marker-alt"></i> <span>Digital Information Buliding,
+                        Room 304<br>558 Daehak-ro, Gunsan-si, Jeonbuk-do 54150, Republic of Korea</span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 MILab. All rights reserved.</p>
+                <p>Kunsan National University</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
